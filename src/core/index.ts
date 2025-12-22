@@ -1,1 +1,1 @@
-export * from './instance/index.js';
+export { MiniVue } from './instance/index';

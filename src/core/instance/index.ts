@@ -7,3 +7,5 @@ function MiniVue(this: IMiniVue, options: InstanceOptions): void {
 
 //@ts-expect-error MiniVue has function type
 initMixins(MiniVue);
+
+export { MiniVue };

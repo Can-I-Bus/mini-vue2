@@ -3,7 +3,6 @@ import { nodeResolve } from '@rollup/plugin-node-resolve';
 import commonjs from '@rollup/plugin-commonjs';
 import babel from '@rollup/plugin-babel';
 import typescript from '@rollup/plugin-typescript';
-import terser from '@rollup/plugin-terser';
 import clear from 'rollup-plugin-clear';
 import serve from 'rollup-plugin-serve';
 import livereload from 'rollup-plugin-livereload';
@@ -15,7 +14,6 @@ export default defineConfig({
         format: 'esm',
         entryFileNames: '[name]-[hash:6].js',
         chunkFileNames: 'chunk-[hash:6].js',
-        plugins: [terser()],
         sourcemap: true,
     },
     plugins: [

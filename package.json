@@ -6,7 +6,8 @@
     "type": "module",
     "scripts": {
         "build": "rollup -c rollup.config.ts --configPlugin typescript",
-        "dev": "rollup -c rollup.test.config.ts -w"
+        "dev": "rollup -c rollup.test.config.ts -w",
+        "dir-tree": "npx tree-cli -l 10 -I \"node_modules,dist,.git\" --dirsfirst"
     },
     "keywords": [],
     "author": "",
